@@ -16,6 +16,7 @@ def home():
     
     if request.method == 'POST':
         word = request.form['word']
+        word = word.lower()
         if word in data:
             str1 = data[word]
             st = ''.join(str1)
