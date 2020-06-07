@@ -25,7 +25,9 @@ def home():
             return "word not found"
         
     return render_template("index.html")
-
+@app.route('/account')
+def account():
+    return "hello"
 if __name__=="__main__":
     app.run(debug=True)
          
